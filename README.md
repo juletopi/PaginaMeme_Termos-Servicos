@@ -63,6 +63,11 @@
 
 <!-- ABOUT THE PAGE -->
 
+## 🖼️ Imagens da página
+
+> ### Modo de tela para dispositivos Desktop 💻
+> <a href=""><img src="https://github.com/user-attachments/assets/d22af143-3655-4b3f-8081-988c4d6b2134" alt="WebPageDesktopView" title="Visualização da página no modo Desktop" style="width: 70%;"></a>
+
 ## 📝 Descrição do Projeto
 
 A página foi criada como conteúdo de seminário para a disciplina de [Programação Web](https://github.com/juletopi/Programacao_Web).
