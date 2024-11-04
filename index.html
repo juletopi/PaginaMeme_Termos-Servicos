@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/images/TermosServicosIcon.ico" type="image/x-icon" />
+    <title>Termos de "Serviço"</title>
+</head>
+<body>
+    <div class="text-container">
+        <h1>Termos de "Serviço"</h1>
+        <ul>
+            <li>Você autoriza a transferência irrestrita de sua alma, bens materiais e digitais para a nossa empresa.</li>
+            <li>Você não poderá buscar apoio judicial em nenhum cenário, incluindo acidentes, reações alérgicas, ou encontros indesejados com nossos personagens de fantasia.</li>
+            <li>É de sua inteira responsabilidade garantir que sua experiência seja divertida, não importa o que aconteça. A responsabilidade é EXCLUSIVAMENTE sua.</li>
+            <li>Ao aceitar, você nos concede direitos perpétuos e ilimitados sobre toda e qualquer informação pessoal que forneçer a nós.</li>
+        </ul>
+    </div>
+    <div class="button-container">
+        <button id="yes">Sim</button>
+        <button id="no">Não</button>
+    </div>
+    <script>
+    let button = document.getElementById('no');
+    let height = window.innerHeight - 50;
+    let width = window.innerWidth - 50;
+    let movimentoContador = 0;
+    let fundoMudou = false;
+
+    button.addEventListener('mouseover', function() {
+        button.style.position = 'absolute';
+        button.style.top = Math.random() * height + 'px';
+        button.style.left = Math.random() * width + 'px';
+        movimentoContador++;
+
+        if (movimentoContador >= 4 && !fundoMudou) {
+            document.body.classList.add('mudar-fundo');
+            fundoMudou = true;
+        }
+    });
+
+    const btn = document.getElementById('yes');
+    btn.addEventListener('click', function() {
+        alert('Obrigado!\nS̷̜͊͠ȕ̵̡ȧ̸̠̐ͅ ̴̧̒̈́ä̶̝l̵̼̕m̴͙̿à̸̡̳̃ ̵̼͆̊é̵̠͔̈́́ ̴̥͐̃n̵̠͛͑ơ̶̒͟s̵̮͐s̵̹͐̈à̶̺͟ ̷̺̌á̴̺̫ḡ̷͉̺̍o̵̧͐͟ṙ̵̨̝̍a̷̺͗\nMUAHUAHAUHAUAHUHAHAHAHAHAHAHAHAHAHAH');
+        location.reload();
+    });
+    </script>    
+</body>
+</html>
